@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "616331015191",
+    "firebase_url": "https://firechat-homanh.firebaseio.com",
+    "project_id": "firechat-homanh",
+    "storage_bucket": "firechat-homanh.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:616331015191:android:962adb1831c16d3f",
+        "android_client_info": {
+          "package_name": "com.homanhuang.firechat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "616331015191-j257k3glg04voqulgqifss065rjchav0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.homanhuang.firechat",
+            "certificate_hash": "f297c347fb4e0999eb6a92b53a79c6b72dae740b"
+          }
+        },
+        {
+          "client_id": "616331015191-llchk24m5esftdg456qsvahpv8oo957o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApqPTwhkhbOqJvVg77i1RQp9Aw6R_mu6g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "616331015191-llchk24m5esftdg456qsvahpv8oo957o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

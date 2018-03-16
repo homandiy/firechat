@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+
+repositories {
+    mavenLocal()
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+
+    defaultConfig {
+        //applicationId "com.google.firebase.udacity.friendlychat"
+        applicationId "com.homanhuang.firechat"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE-FIREBASE.txt'
+        exclude 'META-INF/NOTICE'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    //noinspection GradleCompatible
+    compile 'com.android.support:design:26.1.0'
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    // Displaying images
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+
+    compile 'com.google.firebase:firebase-core:11.8.0'
+    compile 'com.google.firebase:firebase-database:11.8.0'
+    compile 'com.google.firebase:firebase-messaging:11.8.0'
+    compile 'com.google.firebase:firebase-crash:11.8.0'
+    compile 'com.google.firebase:firebase-auth:11.8.0'
+    compile 'com.google.android.gms:play-services-auth:11.8.0'
+
+    // FirebaseUI for Firebase Auth
+    implementation 'com.firebaseui:firebase-ui-auth:3.2.1'
+    // FirebaseUI for Firebase Realtime Database
+    implementation 'com.firebaseui:firebase-ui-database:3.2.1'
+
+    compile 'com.google.firebase:firebase-storage:11.8.0'
+    compile 'com.google.android.gms:play-services-drive:11.8.0'
+}
+apply plugin: 'com.google.gms.google-services'
